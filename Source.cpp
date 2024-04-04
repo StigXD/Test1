@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 void main()
@@ -13,6 +14,7 @@ void main()
 	{
 		system("cls");
 		cout << "1. Show massive" << endl;
+		cout << "2. Sotr" << endl;
 		cout << "0. Exit" << endl;
 		
 		int input;
@@ -28,6 +30,9 @@ void main()
 				cout << arr[i] << " ";
 			cout << endl;
 			system("pause");
+		case 2:
+			sort(arr, arr + size);
+			break;
 		}
 	}
 	system("pause");
