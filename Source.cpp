@@ -14,8 +14,9 @@ void main()
 	{
 		system("cls");
 		cout << "1. Show massive" << endl;
-		cout << "2. Sotr by ASC" << endl;
-		cout << "3. Sotr by desc" << endl;
+		cout << "2. Show massive with index" << endl;
+		cout << "3. Sotr by ASC" << endl;
+		cout << "4. Sotr by desc" << endl;
 		cout << "0. Exit" << endl;
 		
 		int input;
@@ -32,9 +33,13 @@ void main()
 			cout << endl;
 			system("pause");
 		case 2:
+			for (int i = 0; i < size; i++)
+				cout << "[" << i << "]:" << arr[i] << endl;
+			system("pause");
+		case 3:
 			sort(arr, arr + size);
 			break;
-		case 3:
+		case 4:
 			sort(arr, arr + size, [](int a, int b) {return a > b; });
 			break;
 		}
