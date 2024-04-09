@@ -17,6 +17,7 @@ void main()
 		cout << "2. Show massive with index" << endl;
 		cout << "3. Sotr by ASC" << endl;
 		cout << "4. Sotr by desc" << endl;
+		cout << "5. Refull array" << endl;
 		cout << "0. Exit" << endl;
 		
 		int input;
@@ -42,6 +43,9 @@ void main()
 		case 4:
 			sort(arr, arr + size, [](int a, int b) {return a > b; });
 			break;
+		case 5:
+			for (int i = 0; i < size; i++)
+				arr[i] = rand() % 10;
 		}
 	}
 	system("pause");
