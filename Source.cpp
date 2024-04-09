@@ -13,6 +13,7 @@ void main()
 	{
 		system("cls");
 		cout << "1. Show massive" << endl;
+		cout << "2. Show massive with index" << endl;
 		cout << "0. Exit" << endl;
 		
 		int input;
@@ -27,6 +28,10 @@ void main()
 			for (int i = 0; i < size; i++)
 				cout << arr[i] << " ";
 			cout << endl;
+			system("pause");
+		case 2:
+			for (int i = 0; i < size; i++)
+				cout << "[" << i << "]:" << arr[i] << endl;
 			system("pause");
 		}
 	}
